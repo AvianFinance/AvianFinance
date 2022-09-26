@@ -6,6 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <style>
 body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
 body {font-size:16px;}
@@ -22,11 +23,11 @@ body {font-size:16px;}
     <h3 class="w3-padding-64"><b>RIMELabs</b></h3>
   </div>
   <div class="w3-bar-block">
-    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Proposal</a> 
-    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Buying and Selling</a> 
-    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Rental Function</a> 
-    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Mortgage Function</a> 
-    <!-- <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Packages</a>  -->
+    <a href="#abstract" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Abstract</a> 
+    <a href="#bands" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Buying and Selling</a> 
+    <a href="#rental" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Rental Function</a> 
+    <a href="#mortgage" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Mortgage Function</a> 
+    <a href="#theteam" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">The Team</a> 
     <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
   </div>
 </nav>
@@ -44,14 +45,17 @@ body {font-size:16px;}
 <div class="w3-main" style="margin-left:340px;margin-right:40px">
 
   <!-- Header -->
-  <div class="w3-container" style="margin-top:80px" id="showcase">
+  <div class="w3-container" style="margin-top:80px" id="abstract">
     <h1 class="w3-jumbo"><b>NFT Secondary Market</b></h1>
-    <h1 class="w3-xxxlarge" style="color:#00539CFF;"><b>Proposal</b></h1>
+    <h1 class="w3-xxxlarge" style="color:#00539CFF;"><b>Abstract</b></h1>
     <hr style="width:50px;border:5px solid #00539CFF" class="w3-round">
+    <p>On the brink of Metaverse being fully expressed into reality, Importance of Non-Fungible Tokens (NFT) has emerged though different domains like Digital Arts, Music Industry and Gaming. Though advanced platforms for the creation and primary transactions of NFTs are available, a proper secondary markets to liquify the created NFTs are lagging behind. Therefore RIMELabs is dedicated to developing a proper secondary financial market presenting three major functionalities for NFTs, Buying and Selling of NFTs, Rental of NFTs and Mortgage Functions using NFTs.
+        The development of the AvianFinance Secondary Market will be based on the Avalanche Platform due its promising platform architecture and the state of the art consensus engine. We will capture design inspirations from similar development efforts available in the Ethereum Blockchain to improve and benchmark our effort. Finally the new framework will be containerized to a fully functioning platform covering the full-stack, where users can create, sell, buy, engage in renting mechanisms or mortgage functions successfully using their NFTs.
+        </p>
   </div>
   
   <!-- Photo grid (modal) -->
-  <div class="w3-row-padding">
+  <!-- <div class="w3-row-padding">
     <div class="w3-half">
       <img src="/w3images/kitchenconcrete.jpg" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
       <img src="/w3images/livingroom.jpg" style="width:100%" onclick="onClick(this)" alt="Light, white and tight scandinavian design">
@@ -63,7 +67,7 @@ body {font-size:16px;}
       <img src="/w3images/bedroom.jpg" style="width:100%" onclick="onClick(this)" alt="Bedroom and office in one space">
       <img src="/w3images/livingroom2.jpg" style="width:100%" onclick="onClick(this)" alt="Scandinavian design">
     </div>
-  </div>
+  </div> -->
 
   <!-- Modal for full size images on click-->
   <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
@@ -75,68 +79,111 @@ body {font-size:16px;}
   </div>
 
   <!-- Services -->
-  <div class="w3-container" id="services" style="margin-top:75px">
+  <div class="w3-container" id="bands" style="margin-top:75px">
     <h1 class="w3-xxxlarge" style="color:#00539CFF;"><b>Buying and Selling</b></h1>
     <hr style="width:50px;border:5px solid #00539CFF" class="w3-round">
-    <p>We are a interior design service that focus on what's best for your home and what's best for you!</p>
-    <p>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    </p>
+    <p>Buying and selling of NFTs is a primary requirement in the market and the AvianFinance Platform supports three unique buying and selling mechanisms. </p>
+    <ul>
+        <li><strong>Fixed Price</strong><br><p>Fixed Price mechanism allows the seller to define a price in a suitable currency and a buyer willing to match the price can obtain the ownership. AvianFinance Platform provides settlement trust for the transactions as well.
+        </p></li>
+        <li><strong>Auctions</strong><br><p>Auctions allows the seller to define a base price for the NFT and a duration for the auction to happen. At the auction time, potential buyers need to add bids to the NFT and at the end of the auction period, the bidder with the highest bid will attain the ownership. AvianFinance Platform provides settlement trust for the transactions as well.</p></li>
+        <li><strong>Offers</strong><br><p>Offers allow potential buyers to send buy offers for NFTs not listed for sale and also allow buyers to send sell offers with a lower price to Fixed Priced listed NFT.</p></li>
+    </ul>
   </div>
   
   <!-- Designers -->
-  <div class="w3-container" id="designers" style="margin-top:75px">
+  <div class="w3-container" id="rental" style="margin-top:75px">
     <h1 class="w3-xxxlarge" style="color:#00539CFF;"><b>Rental Function</b></h1>
     <hr style="width:50px;border:5px solid #00539CFF" class="w3-round">
-    <p>The best team in the world.</p>
-    <p>We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-    incididunt ut labore et quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    <p>Besides buying and selling NFTs open up several options to generate a passive income through NFT renting. Renting provides the benefits of having an NFT without the financial commitment of investing in it. It has potential benefits for both NFT lenders and borrowers. For the borrower, it opens up the opportunity to join the NFT community and take advantage of a digital asset that they wouldn’t be able to afford. For the lender, it creates a financial incentive by allowing them to earn money on NFTs that might not be utilized for a certain period of time. There are several rental use cases that are possible in the current digital market.
     </p>
-    <p><b>Our designers are thoughtfully chosen</b>:</p>
-  </div>
-
-  <!-- The Team -->
-  <div class="w3-row-padding w3-grayscale">
-    <div class="w3-col m4 w3-margin-bottom">
-      <div class="w3-light-grey">
-        <img src="/w3images/team2.jpg" alt="John" style="width:100%">
-        <div class="w3-container">
-          <h3>John Doe</h3>
-          <p class="w3-opacity">CEO & Founder</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-        </div>
-      </div>
+    <ul>
+        <li>Gaming assets</li>
+        <li>Event tickets</li>
+        <li>Virtual land</li>
+        <li>Subscription</li>
+        <li>Temporary Assets</li>
+    </ul>
+    <p>Through this project, we propose a novel architecture for the NFT rental protocol. There are two broad ways where NFTs can be rented out which are collateral-free solutions - Upfront rental and Reward share.</p>
+    <h1 class="w3-xxxlarge" style="color:#00539CFF;"><b>Upfront Rentals</b></h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-7">
+                <p>In the upfront rental mechanism, the NFT owner(lender) decides the daily rental price and the maximum rental duration when putting it up for rental. When the renter requests to rent by defining the rental duration and paying the rental fees,  the smart contract assigns the user right to the renter. Then the renter receives access to the utility of the NFT.  When the rental period ends, the NFT is automatically transferred back to the owner through the rental platform. Games and events can take advantage of this solution to enable rentals on their platforms without users risking their NFTs getting defaulted</p>
+            </div>
+            <div class="col-5">
+                <img src="imges/Rental architecture-Upfront Rental.drawio.png" style="width:60%; height: auto; justify-content: center; align-items:center" onclick="onClick(this)" alt="mortgage">
+            </div>
+        <div>
     </div>
-    <div class="w3-col m4 w3-margin-bottom">
-      <div class="w3-light-grey">
-        <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
-        <div class="w3-container">
-          <h3>Jane Doe</h3>
-          <p class="w3-opacity">Designer</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-        </div>
-      </div>
-    </div>
-    <div class="w3-col m4 w3-margin-bottom">
-      <div class="w3-light-grey">
-        <img src="/w3images/team3.jpg" alt="Mike" style="width:100%">
-        <div class="w3-container">
-          <h3>Mike Ross</h3>
-          <p class="w3-opacity">Architect</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-        </div>
-      </div>
+    <h1 class="w3-xxxlarge" style="color:#00539CFF;"><b>Reward Share</b></h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-7">
+                <p>In the reward share mechanism, four entities work together, the NFT owner, the NFT renter, Gaming Platform and the AvianFinance Platform. Gaming platform provides a list of available assets which can be rented (which were listed by renters in AvianFinance Platform), the renter decides which asset to rent and asks the gaming platform to do the necessary transactions. Then the gaming platform requests the AvianFinace Platform to transfer the user role of the corresponding NFT to the renter and as payment, the rewards the renter receives by using the asset is splitted between the renter and the owner. Collateral is not not required as the user role will be automatically assigned to the owner after the defined rental period. This function will be beneficial to all the parties involved, making stagnant NFTs highly usable and liquid.</p>
+            </div>
+            <div class="col-5">
+                <img src="imges/Rental architecture-Reward Share.drawio.png" style="width:60%; height: auto; justify-content: center; align-items:center" onclick="onClick(this)" alt="mortgage">
+            </div>
+        <div>
     </div>
   </div>
 
   <!-- Packages / Pricing Tables -->
-  <div class="w3-container" id="packages" style="margin-top:75px">
+  <div class="w3-container" id="mortgage" style="margin-top:75px">
     <h1 class="w3-xxxlarge" style="color:#00539CFF;"><b>Mortgage Function</b></h1>
     <hr style="width:50px;border:5px solid #00539CFF" class="w3-round">
-    <p>Some text our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-7">
+                <p>Generally a mortgage is a loan taken to buy a digital or physical asset by using the same asset as a collateral. The due loan amount is required to be paid in instalments including the interest, as agreed at the time of signing the contract. The AvianFinance Market provides two mortgage solutions,
+                    Obtaining a Loan to buy an asset, keeping the same asset as collateral.
+                    Obtaining a Loan to buy an asset, keeping a different asset as collateral.
+                    Neither of these functions have standardised solutions in the NFT world and RIMElabs intend to publish a standard specifying the underlying architecture of proposed Mortgage solutions. Following sequence diagram provides an overview of the proposed architecture.
+                    </p>
+            </div>
+            <div class="col-5">
+                <img src="imges/Rental architecture-Mortgage.drawio.png" style="width:60%; height: auto; justify-content: center; align-items:center" onclick="onClick(this)" alt="mortgage">
+            </div>
+        <div>
+    </div>
   </div>
+
+  <div class="w3-container" id="theteam" style="margin-top:75px">
+    <h1 class="w3-xxxlarge" style="color:#00539CFF;"><b>The Team</b></h1>
+    <hr style="width:50px;border:5px solid #00539CFF" class="w3-round">
+    <div class="w3-col m4 w3-margin-bottom">
+        <div class="w3-light-grey">
+          <img src="/imges/profilepic/MB_Final.jpg" alt="John" style="width:100%">
+          <div class="w3-container">
+            <h3>Meelan Bandara</h3>
+            <p class="w3-opacity">Software Engineer</p>
+            <!-- <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p> -->
+          </div>
+        </div>
+      </div>
+      <div class="w3-col m4 w3-margin-bottom">
+        <div class="w3-light-grey">
+          <img src="/imges/profilepic/RJ 01.jpg" alt="Jane" style="width:100%">
+          <div class="w3-container">
+            <h3>Roshinie Jayasundara</h3>
+            <p class="w3-opacity">Software Engineer</p>
+            <!-- <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p> -->
+          </div>
+        </div>
+      </div>
+      <div class="w3-col m4 w3-margin-bottom">
+        <div class="w3-light-grey">
+          <img src="/imges/profilepic/IA 01.jpg" alt="Mike" style="width:100%">
+          <div class="w3-container">
+            <h3>Isuru Ariyarathne</h3>
+            <p class="w3-opacity">Software Engineer</p>
+            <!-- <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p> -->
+          </div>
+        </div>
+      </div>
+      </div>
+
   
   <!-- Contact -->
   <div class="w3-container" id="contact" style="margin-top:75px">
@@ -186,6 +233,10 @@ function onClick(element) {
   captionText.innerHTML = element.alt;
 }
 </script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 </body>
 </html>
